@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMALINA EXAMS[confirm you are human by answering these questions correctly]|Exam Portal</title>
+  <style>
+    body {
+      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      width: 90%;
+      max-width: 600px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question p {
+      font-weight: bold;
+    }
+    .question input[type="radio"] {
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2e86de;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e6fbf;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MMALINA EXAMS</h1>
+    <form id="examForm">
+      <div class="question">
+        <p>1. What is the capital of Kenya?</p>
+        <label><input type="radio" name="q1" /> Mombasa</label><br />
+        <label><input type="radio" name="q1" /> Kisumu</label><br />
+        <label><input type="radio" name="q1" /> Nairobi</label><br />
+      </div>
+      <div class="question">
+        <p>2. Solve: 3x + 5 = 14. What is x?</p>
+        <label><input type="radio" name="q2" /> 4</label><br />
+        <label><input type="radio" name="q2" /> 3</label><br />
+        <label><input type="radio" name="q2" /> 5</label><br />
+      </div>
+      <div class="question">
+        <p>3. What gas do plants use for photosynthesis?</p>
+        <label><input type="radio" name="q3" /> Oxygen</label><br />
+        <label><input type="radio" name="q3" /> Nitrogen</label><br />
+        <label><input type="radio" name="q3" /> Carbon Dioxide</label><br />
+      </div>
+      <button type="button" onclick="rickroll()">Submit Exam</button>
+    </form>
+  </div>
+
+  <script>
+    function rickroll() {
+      alert("Submitting exam...");
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
